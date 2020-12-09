@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: rgba(235, 201, 229, 0.938);
+}
+
+header {
+    background-color: rgb(205, 48, 226);
+    padding: 2% 23% 10% 19%;
+    position: absolute;
+    overflow: auto;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 300%;
+    background-color: rgb(205, 48, 226);
+}
+
+section {
+    position: absolute;
+    margin: 10% 13% 10% 18%;
+    padding-top: 2%;
+}
+
+#description {
+    padding: 1%;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 150%;
+}
+
+form {
+    text-align: center;
+    padding: 3%;
+    width: 100%;
+    margin-bottom: 5%;
+    background: transparent;
+    height: auto;
+    background-color: white;
+    border: 1px solid rgb(143, 141, 141);
+    box-shadow: 2px 2px 10px rgb(228, 180, 213), -2px -2px 10px rgb(228, 180, 213);
+}
+
+label {
+    padding: 1%;
+    margin: 1%;
+    font-weight: bolder;
+}
+
+input,
+select {
+    padding: 1%;
+    margin: 2%;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select {
+    width: 40%;
+}
+
+.rate {
+    color: rgb(110, 102, 102);
+    font-weight: bolder;
+}
+
+#rate {
+    font-variant: small-caps;
+    font-size: 145%;
+}
+
+button {
+    padding: 1%;
+    margin: 2%;
+    font-size: 100%;
+    border: none;
+    background-color: rgb(90, 191, 231);
+}

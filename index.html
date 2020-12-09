@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey For HealthCare Professionals in covid-19 Affected Areas</h1>
+    </header>
+    <section>
+        <p id="description">This is a Survey for HealthCare professionals.</p>
+        <form id="survey-form">
+            <label id="name-label">Name: </label><input type="text" id="name" placeholder="Enter Your Name" required><br/>
+            <label id="email-label">Email ID: </label><input type="email" id="email" placeholder="Enter your Email ID" required><br/>
+            <label id="number-label">Age: </label><input type="number" class="number" id="number" min="0" max="200" placeholder="Enter your Age" required><br/>
+
+            <label>Which is your gender</label>
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female" required>Female
+            <input type="radio" name="gender" value="tmale" required>Transgender male
+            <input type="radio" name="gender" value="tfemale" required>Transgender Female
+            <input type="radio" name="gender" value="other" required>Others<br/>
+            <label>Country of residence</label>
+            <select id="dropdown" required>
+                <option selected disabled>Select</option>
+                <option>Afganistan</option>
+                <option>Akrotiri</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+            </select><br/>
+
+            <label>Do you have any of the symptoms </label>
+            <input type="checkbox" name="symptom" value="fever">Fever
+            <input type="checkbox" name="symptom" value="cough">Cough
+            <input type="checkbox" name="symptom" value="Body Pain">Body Pain
+            <input type="checkbox" name="symptom" value="Others">Others<br/>
+
+
+            <label>Name of the hospital or healthcare facility you work in:</label><input type="text" id="facility" required><br/>
+            <label>Have there been any known or suspected COVID-19 virus cases in the facilty you work in?</label>
+            <input type="radio" name="suspect" value="yes" required>Yes
+            <input type="radio" name="suspect" value="no" required>No
+            <input type="radio" name="suspect" value="notsure" required>Not Sure<br/>
+
+            <label>Is your facility equipped to handle cases of COVID-19? </label>
+            <input type="radio" name="equipped" value="yes" required>Yes
+            <input type="radio" name="equipped" value="no" required>No
+            <input type="radio" name="equipped" value="notsure" required>Not Sure<br/>
+
+            <label id="rate">Rate your facility in the following Aspects(1 - Extremely Poor || 5 - Extremely Good):</label><br/>
+            <label class="rate">Availabilty of Doctors:</label>
+            <input type="radio" name="doctor" value="1" required>1
+            <input type="radio" name="doctor" value="2" required>2
+            <input type="radio" name="doctor" value="3" required>3
+            <input type="radio" name="doctor" value="4" required>4
+            <input type="radio" name="doctor" value="5" required>5<br/>
+            <label class="rate">Availabilty of Nurses:</label>
+            <input type="radio" name="nurse" value="1" required>1
+            <input type="radio" name="nurse" value="2" required>2
+            <input type="radio" name="nurse" value="3" required>3
+            <input type="radio" name="nurse" value="4" required>4
+            <input type="radio" name="nurse" value="5" required>5<br/>
+            <label class="rate">Availabilty of Beds:</label>
+            <input type="radio" name="bed" value="1" required>1
+            <input type="radio" name="bed" value="2" required>2
+            <input type="radio" name="bed" value="3" required>3
+            <input type="radio" name="bed" value="4" required>4
+            <input type="radio" name="bed" value="5" required>5<br/>
+            <label class="rate">Training of healthcare professionals:</label>
+            <input type="radio" name="healthcare" value="1" required>1
+            <input type="radio" name="healthcare" value="2" required>2
+            <input type="radio" name="healthcare" value="3" required>3
+            <input type="radio" name="healthcare" value="4" required>4
+            <input type="radio" name="healthcare" value="5" required>5<br/>
+            <label class="rate">Safety measures taken: </label>
+            <input type="radio" name="safety" value="1" required>1
+            <input type="radio" name="safety" value="2" required>2
+            <input type="radio" name="safety" value="3" required>3
+            <input type="radio" name="safety" value="4" required>4
+            <input type="radio" name="safety" value="5" required>5<br/>
+
+            <label>Have you been training to handle known or suspected cases of COVID-19? </label>
+            <input type="radio" name="training" value="yes" required>Yes
+            <input type="radio" name="training" value="no" required>No<br/>
+
+            <label>Do you feel prepared to care for patients with COVID-19?</label>
+            <input type="radio" name="care" value="yes" required>Yes
+            <input type="radio" name="care" value="no" required>No
+            <input type="radio" name="care" value="notsure" required>Not Sure<br/>
+
+            <label>Have you personally dealt with a known or suspected COVID-19 patient? </label>
+            <input type="radio" name="dealt" value="yes" required>Yes
+            <input type="radio" name="dealt" value="no" required>No
+            <input type="radio" name="dealt" value="notsure" required>Not Sure<br/>
+
+            <label>Haa your facility done enough to ensure your safety? </label>
+            <input type="radio" name="ensure" value="yes" required>Yes
+            <input type="radio" name="ensure" value="no" required>No
+            <input type="radio" name="ensure" value="maybe" required>Maybe
+            <input type="radio" name="ensure" value="notsure" required>Not Sure<br/>
+
+            <label>Have you been instructed on what to do if you feel you have been exposed to a known or suspected COVID-19 patient? </label><br/>
+            <input type="radio" name="exposed" value="yes" required>Yes
+            <input type="radio" name="exposed" value="no" required>No
+            <input type="radio" name="exposed" value="own" required>I have learnt it on my own..<br/>
+
+            <label>Do you feel safe at work? </label>
+            <input type="radio" name="safe" value="yes" required>Yes
+            <input type="radio" name="safe" value="no" required>No
+            <input type="radio" name="safe" value="notsure" required>Not Sure<br/>
+
+            <label>Has your facility offered you additional compensation or benefits during the duration of the COVID-19 epidemic? </label><br/>
+            <input type="radio" name="benefits" value="yes" required>Yes
+            <input type="radio" name="benefits" value="no" required>No
+            <input type="radio" name="benefits" value="notsure" required>Not Sure<br/>
+
+            <label>Rate the HealthCare System:</label>
+            <input type="number" id="number" class="number" placeholder="Out of 10" min="1" max="10" required/><br/>
+
+            <label>Your Views on the HealthCare System</label><br/>
+            <textarea rows=" 10 " cols="100" required></textarea><br>
+
+            <button type="submit" id="submit" onclick="alert('Thank you for participating!!')">Submit</button>
+        </form>
+
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
