@@ -11,7 +11,9 @@ body {
 
 header {
     background-color: rgb(205, 48, 226);
-    padding: 2% 23% 10% 19%;
+    padding: 2% 36% 20% 36%;
+    width: 100%;
+    font-size: 100%;
     position: absolute;
     overflow: auto;
 }
@@ -19,27 +21,27 @@ header {
 h1 {
     font-variant: small-caps;
     text-align: center;
-    font-size: 300%;
     background-color: rgb(205, 48, 226);
 }
 
 section {
+    display: flexbox;
     position: absolute;
-    margin: 10% 13% 10% 18%;
+    margin: 30% 5% 15% 5%;
     padding-top: 2%;
 }
 
 #description {
     padding: 1%;
     font-weight: bolder;
+    font-size: 120%;
     font-variant: small-caps;
-    font-size: 150%;
 }
 
 form {
     text-align: center;
     padding: 3%;
-    width: 100%;
+    width: 90%;
     margin-bottom: 5%;
     background: transparent;
     height: auto;
@@ -83,4 +85,24 @@ button {
     font-size: 100%;
     border: none;
     background-color: rgb(90, 191, 231);
+}
+
+@media print {
+    body {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        margin: 6% 7% 15% 7%;
+        width: 90%;
+    }
+    header {
+        font-size: 150%;
+        padding: 2% 3% 10% 3%;
+    }
+    #description {
+        font-size: 200%;
+    }
 }
